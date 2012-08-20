@@ -8,7 +8,7 @@
 
 @load frameworks/communication/listen
 
-#redef Log::default_writer = Log::WRITER_ELASTICSEARCH;
+redef Log::default_writer = Log::WRITER_ELASTICSEARCH;
 redef Log::default_rotation_interval = 3hr;
 
 module ReLog;
