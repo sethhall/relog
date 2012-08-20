@@ -38,7 +38,7 @@ If you have more scripts and you need define the files to read in a script you w
 
 .. note::
 
-	If you loaded scripts that included extra fields in your logss, you will need to make sure and load those scripts when relogging.  This can typically be dealt with by just loading your site/local.bro script.
+	If you loaded scripts that included extra fields in your logs, you will need to be sure and load those scripts when relogging.  This can typically be dealt with by just loading your site/local.bro script.
 
 .. note::
 
