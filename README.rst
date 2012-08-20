@@ -14,7 +14,6 @@ Installation
 
 	cd <prefix>/share/bro/site/
 	git clone git://github.com/sethhall/relog.git
-	echo "@load relog" >> local.bro
 
 Configuration
 -------------
