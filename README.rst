@@ -10,6 +10,8 @@ A Module for Bro to read ASCII logs and send them to some other writer.  By defa
 Installation
 ------------
 
+This script is only meant for manual usage and if it's loaded when reading traffic or not configured, Bro will send a message to the reporter framework and terminate.
+
 ::
 
 	cd <prefix>/share/bro/site/
