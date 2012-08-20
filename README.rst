@@ -1,7 +1,7 @@
 Bro ReLog
 =========
 
-A Module for Bro to read ASCII logs and send them to some other writer.  By default logs are sent to the ElasticSearch writer with this script.  This is a convenient and easy way to import old ASCII logs into ElasticSearch for use with `Brownian <https://github.com/grigorescu/Brownian>_`.
+A Module for Bro to read ASCII logs and send them to some other writer.  By default logs are sent to the ElasticSearch writer with this script.  This is a convenient and easy way to import old ASCII logs into ElasticSearch for use with `Brownian https://github.com/grigorescu/Brownian`.
 
 .. note::
 
