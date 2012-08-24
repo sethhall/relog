@@ -8,9 +8,6 @@
 
 @load frameworks/communication/listen
 
-redef Log::default_writer = Log::WRITER_ELASTICSEARCH;
-redef Log::default_rotation_interval = 3hr;
-
 module ReLog;
 
 export {
@@ -18,7 +15,6 @@ export {
 	## on disk and a Log::ID
 	const logs: table[string] of Log::ID &redef;
 }
-
 
 global last_record = current_time();
 
@@ -44,13 +40,13 @@ event bro_init() &priority=-5
 		terminate();
 		return;
 		}
+	
 	if ( reading_live_traffic() || reading_traces() )
 		{
 		event reporter_error(current_time(), "ReLog loaded and Bro reading traffic.  Unexpected results ahead so shutting down.", "");
 		terminate();
 		return;
 		}
-
 
 	for ( log_file in logs )
 		{
